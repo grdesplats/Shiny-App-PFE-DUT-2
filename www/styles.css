@@ -1,0 +1,169 @@
+input[type="number"] {
+  max-width: 80%;
+}
+
+div.outer {
+  position: fixed;
+  top: 41px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  padding: 0;
+}
+
+  body, label, input, button, select { 
+    font-family: 'Helvetica Neue', Helvetica;
+    font-weight: 200;
+  }
+h1, h2, h3, h4 { font-weight: 400; }
+
+/* #controls {
+  background-color: white;
+padding: 0 20px 20px 20px;
+cursor: move;
+  opacity: 0;
+transition: opacity 500ms 1s;
+}
+#controls:hover {
+  opacity: 0.95;
+transition-delay: 0;
+} */
+
+.leaflet-popup-content-wrapper {
+    width: 300px;
+    padding: 0 0 0 0;
+    padding-right: 0;
+    text-align: left;
+    border-radius: 17px;
+}
+
+.leaflet-popup-content {
+    margin: 0 !important; 
+    line-height: 1.4;
+}
+
+.leaflet-popup-tip {
+  background-color: #97C4AE !important;
+    width: 17px;
+    height: 17px;
+    padding: 1px;
+    margin: -10px auto 0;
+    -webkit-transform: rotate(
+45deg
+);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(
+45deg
+);
+}
+
+
+#cite {
+  position: absolute;
+  bottom: 10px;
+  left: 190px;
+  font-size: 12px;
+}
+#title {
+  position: absolute;
+  top: 80px;
+  right: 50px;
+  font-size: 12px;
+}
+.leaflet-container {
+    background-color: white !important;
+  }
+  
+.leaflet-top {
+    top: 20px !important;
+}
+.card {
+  border-radius: 18px;
+  box-shadow: 0 3rem 6rem rgba(0, 0, 0, .1);
+}
+
+
+.card:hover {
+    box-shadow: 0 4rem 8rem rgba(0, 0, 0, .2);
+}
+
+.card-image {
+  grid-area: image;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-size: cover;
+}
+
+.card-text {
+  grid-area: text;
+  margin: 25px;
+  text-align: center;
+}
+.card-text .date {
+  color: #97C4AE;
+  font-size:13px;
+}
+.card-text p {
+  color: grey;
+  font-size:15px;
+  font-weight: 300;
+}
+.card-text h2 {
+  margin-top:0px;
+  font-size:28px;
+}
+
+.card-stats {
+  grid-area: stats; 
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background: #97C4AE;
+
+}
+
+.card-stats .stat {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  padding:10px;
+}
+
+.card-stats .type{
+  color: white;
+  font-size: 11px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.card-stats .value{
+  color: white;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.card-text .a{
+  color: grey;
+}
+
+.content .entry-title {
+    letter-spacing: 0px;
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+#entry-title2{
+    background: #a9e1d7 none repeat scroll 0 0;
+    content: "";
+    display: block;
+    height: 2px;
+    margin-top: 20px;
+    width: 80px;
+}
