@@ -5,15 +5,6 @@ library(tidyverse)
 library(rvest)
 library(shinythemes)
 library(shinyBS)
-# library(rsconnect)
-# rsconnect::deployApp('D:/travail/Etude/DUT STID/4eme_semestre/Projet_Final/ExploreVolcanos')
-
-setwd("D:/travail/Etude/DUT STID/4eme_semestre/Projet_Final/ExploreVolcanos")
-
-# pal <- colorFactor(c("red", "orange","yellow"), domain = c("Very Strong[5.5-10)", "Strong [4.5-5.5]","Moderate [2.5-4.5]"))
-
-
-
 
 earthquake = read.csv("https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/2.5_month.csv")
 
@@ -174,7 +165,7 @@ ui = navbarPage("Discover Volcanoes", id="nav",
                         tags$br(),
                         tags$br(),
                       "View code on github",
-                      tags$a(class="linkedin", href="https://github.com/grdesplats", target="_blank",
+                      tags$a(class="linkedin", href="https://github.com/grdesplats/Volcanoes-Shiny-App", target="_blank",
                              tags$img(class="", src="github.png", width = "2%"))
                      ),
                    ),
