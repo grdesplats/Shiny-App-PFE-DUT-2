@@ -40,7 +40,7 @@ map <- leaflet(options = leafletOptions(minZoom = 2, maxZoom = 18,preferCanvas =
     options = layersControlOptions(collapsed = FALSE)) %>% 
   htmlwidgets::onRender("
         function() {
-            $('.leaflet-control-layers-overlays').prepend('<label style=\"text-align:center\"><b>Print Earthquakes since last...</b></label>');
+            $('.leaflet-control-layers-overlays').prepend('<label style=\"text-align:center\"><b>Display Earthquakes since last...</b></label>');
         }
     ") %>% 
   addLegend(
@@ -140,8 +140,8 @@ ui = navbarPage("Discover Volcanoes", id="nav",
                                  ),
                         absolutePanel(
                           top = 230, left =15, style = "z-index:500;",
-                          checkboxInput("tect",tags$b("Print tectonics plates boundaries"),FALSE),
-                          checkboxInput("volc",tags$b("Print Volcanos"),TRUE)
+                          checkboxInput("tect",tags$b("Display tectonics plates boundaries"),FALSE),
+                          checkboxInput("volc",tags$b("Display Volcanoes"),TRUE)
                         ),
                         
                         tags$div(id="cite",
@@ -160,7 +160,7 @@ ui = navbarPage("Discover Volcanoes", id="nav",
                         tags$br(),
                         tags$br(),
                       'On this application, you can discover the different volcanoes present on Earth. Click on the volcano icons to get more information from Wikipedia (using scraping). You can remove the icons by unchecking "show volcanoes".
-                      Moreover, you can access the  earthquakes of the last month, by checking the box "Print Earthquakes since last...". The database is automatically updated with data from the U.S. Geological Survey (USGC) ',
+                      Moreover, you can access the  earthquakes of the last month, by checking the box "Display Earthquakes since last...". The database is automatically updated with data from the U.S. Geological Survey (USGC) ',
                       
                         tags$br(),
                         tags$br(),
